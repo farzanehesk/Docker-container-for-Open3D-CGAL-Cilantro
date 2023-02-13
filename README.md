@@ -18,9 +18,9 @@
   ## mpfr
     sudo apt-get install libmpfr-dev
 
-  mkdir external
-  cd external/
-  git init
+  - mkdir external
+  - cd external/
+  - git init
   
   
   ## open3d
