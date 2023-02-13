@@ -1,32 +1,27 @@
-  #####################################################
+  
   ## cmake
-  #####################################################
-  sudo snap install cmake --classic
+    sudo snap install cmake --classic
   
  
   
-  #####################################################
+  
   ## eigen
-  #####################################################
-  sudo apt-get install libeigen3-dev
+     sudo apt-get install libeigen3-dev
   
   
-  #####################################################
+  
   ## boost
-  #####################################################
-  sudo apt-get install libboost-all-dev
+    sudo apt-get install libboost-all-dev
   
   
-  #####################################################
+  
   ## gmp
-  #####################################################
-  sudo apt-get install libgmp3-dev
+    sudo apt-get install libgmp3-dev
   
   
-  #####################################################
+  
   ## mpfr
-  #####################################################
-  sudo apt-get install libmpfr-dev
+    sudo apt-get install libmpfr-dev
   
   
   
