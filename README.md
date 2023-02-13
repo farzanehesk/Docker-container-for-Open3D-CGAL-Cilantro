@@ -37,26 +37,22 @@
     sudo make install
   
   
-  #####################################################
+  
   ## cilantro
-  #####################################################
-  git submodule add https://github.com/kzampog/cilantro
-  mkdir build
-  cd build/
-  cmake ..
-  make -j4
-  sudo make install
+    git submodule add https://github.com/kzampog/cilantro
+    mkdir build
+    cd build/
+    cmake ..
+    make -j4
+    sudo make install
 
-
-  #####################################################
   ## cgal
-  #####################################################
-  git submodule add https://github.com/CGAL/cgal
-  mkdir build
-  cd build/
-  cmake ..
-  make -j4
-  sudo make install
+    git submodule add https://github.com/CGAL/cgal
+    mkdir build
+    cd build/
+    cmake ..
+    make -j4
+    sudo make install
   
   
   
