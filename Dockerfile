@@ -30,13 +30,22 @@ RUN make install
 
 # Install CGAL
 WORKDIR /build_libs
-RUN git clone https://github.com/CGAL/cgal.git
-RUN git checkout v5.5.1
+RUN wget https://github.com/CGAL/cgal/releases/download/v5.5.1/CGAL-5.5.1.tar.xz
+RUN mkdir /build_libs/cgal
+RUN tar -xf CGAL-5.5.1.tar.xz -C /build_libs/cgal --strip-components=1
 
 # Build
-WORKDIR /build_libs/cilantro
+WORKDIR /build_libs/cgal
 RUN mkdir build
-WORKDIR /build_libs/cilantro/build
+WORKDIR /build_libs/cgal/build
 RUN cmake ..
 RUN make -j4
 RUN make install
+
+RUN mkdir -p /build_libs/shingle
+COPY main.cpp CMakeLists.txt my_open3d.h /build_libs/shingle/
+WORKDIR /build_libs/shingle
+RUN mkdir /build_libs/shingle/build
+WORKDIR /build_libs/shingle/build
+RUN cmake ..
+
