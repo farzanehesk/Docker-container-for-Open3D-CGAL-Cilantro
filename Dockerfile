@@ -42,10 +42,4 @@ RUN cmake ..
 RUN make -j4
 RUN make install
 
-RUN mkdir -p /build_libs/shingle
-COPY main.cpp CMakeLists.txt my_open3d.h /build_libs/shingle/
-WORKDIR /build_libs/shingle
-RUN mkdir /build_libs/shingle/build
-WORKDIR /build_libs/shingle/build
-RUN cmake ..
 
